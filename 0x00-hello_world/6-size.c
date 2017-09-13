@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 /**
+*main - Entry point
 *
-* main - Entry point
+*variable declarations
 *
-* variable declarations
+*printf - prints the size in byte of each declared type
 *
-* printf - prints the size in byte of each declared type
-*
-* Return : returns 0 (success)
+*Return: Always 0 (success)
 */
 int main(void)
 {
