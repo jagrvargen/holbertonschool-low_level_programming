@@ -19,3 +19,5 @@
 9. Prints all single digit numbers, separated by a comma and blank space, using putchar
 
 10. Print Comb2 - Prints the numbers 00 to 99 with commas and spaces in between and a newline at the end.
+
+11. Print Comb3 - Prints all possible combinations of two digits with no repeats.
