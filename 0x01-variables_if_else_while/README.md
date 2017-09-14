@@ -9,3 +9,5 @@
 4. Print Alphabets - Prints all the lowercase letters in the alphabet followed immediately by the uppercase letters.
 
 5. Print Numbers - Prints all single digit numbers of base 10 starting from zero, followed by a newline.
+
+6. Print Numberz - Prints all single digit numbers in base 10 using the putchar function.
