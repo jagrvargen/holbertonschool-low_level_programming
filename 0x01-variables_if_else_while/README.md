@@ -7,3 +7,5 @@
 3. Print Alphabt - Prints all lowercase letters in the alphabet except q and e.
 
 4. Print Alphabets - Prints all the lowercase letters in the alphabet followed immediately by the uppercase letters.
+
+5. Print Numbers - Prints all single digit numbers of base 10 starting from zero, followed by a newline.
