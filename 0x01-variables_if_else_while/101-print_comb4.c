@@ -7,5 +7,5 @@ int main(void)
 	int k;
 	int l;
 
-	
+	for (i = )
 }
