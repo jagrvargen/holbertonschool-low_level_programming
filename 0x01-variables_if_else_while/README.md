@@ -4,3 +4,4 @@
 
 2. Print Alphabet - Prints the alphabet in lowercase followed by a newline.
 
+3. Print Alphabt - Prints all lowercase letters in the alphabet except q and e.
