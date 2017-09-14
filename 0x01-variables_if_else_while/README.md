@@ -13,3 +13,5 @@
 6. Print Numberz - Prints all single digit numbers in base 10 using the putchar function.
 
 7. Print Tebahpla - Prints the lowercase alphabet backwards using the putchar function.
+
+8. Print Base 16 = Prints all the digits in base 16 using putchar.
