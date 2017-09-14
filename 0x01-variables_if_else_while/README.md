@@ -11,3 +11,5 @@
 5. Print Numbers - Prints all single digit numbers of base 10 starting from zero, followed by a newline.
 
 6. Print Numberz - Prints all single digit numbers in base 10 using the putchar function.
+
+7. Print Tebahpla - Prints the lowercase alphabet backwards using the putchar function.
