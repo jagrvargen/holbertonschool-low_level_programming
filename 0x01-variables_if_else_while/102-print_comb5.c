@@ -17,11 +17,14 @@ int main(void)
 
 	for (i = '0'; i <= '9'; i++)
 	{
-		for (j = '0'; j <= '8'; j++)
+		j = '0';
+		for (; j <= '8'; j++)
 		{
-			for (k = '0'; k <= '9'; k++)
+			k = i;
+			for (; k <= '9'; k++)
 			{
-				for (l = '1'; l <= '9'; l++)
+				l = j + 1;
+				for (; l <= '9'; l++)
 				{
 					putchar(i);
 					putchar(j);
