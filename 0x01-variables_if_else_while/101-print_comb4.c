@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * void - does not accept arguments
+ *
+ * Return: Always 0 (success)
+ *
+ */
 int main(void)
 {
 	int i;
