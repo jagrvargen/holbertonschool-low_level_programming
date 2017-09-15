@@ -18,7 +18,7 @@ int main(void)
 	for (i = '0'; i <= '9'; i++)
 	{
 		j = '0';
-		for (; j <= '8'; j++)
+		for (; j <= '9'; j++)
 		{
 			k = i;
 			for (; k <= '9'; k++)
