@@ -3,10 +3,9 @@
 /**
  * main - Entry point
  *
- * void - does not accept arguments
+ * void - takes no arguments
  *
- * Return: Always 0 (success)
- *
+ * Return: always 0 (success)
  */
 int main(void)
 {
@@ -14,23 +13,29 @@ int main(void)
 	int j;
 	int k;
 
-	for (i = 48; i <= 55; i++)
+	i = '0';
+	j = '1';
+	k = '2';
+	while (i <= '7')
 	{
-		j = 49;
-		for (; j <= 56; j++)
+		while (j <= '8')
 		{
-			k = 50;
-			for (; k <= 57; k++)
+			while (k <= '9')
 			{
 				putchar(i);
 				putchar(j);
 				putchar(k);
-				if (i == 55 && j == 56 && k == 57)
+				if (i == '7' && j == '8' && k == '9')
 					break;
 				putchar(',');
 				putchar(' ');
+				k++;
 			}
+			j++;
+			k = j + 1;
 		}
+		i++;
+		j = i;
 	}
 	putchar('\n');
 	return (0);
