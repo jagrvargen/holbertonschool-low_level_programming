@@ -27,7 +27,7 @@ int main(void)
 			l = i % 10;
 			m = j / 10;
 			n = j % 10;
-			putchar(k +'0');
+			putchar(k + '0');
 			putchar(l + '0');
 			putchar(' ');
 			putchar(m + '0');
