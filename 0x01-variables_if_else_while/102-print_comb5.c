@@ -20,7 +20,7 @@ int main(void)
 		j = '0';
 		for (; j <= '9'; j++)
 		{
-			k = i;
+			k = '0';
 			for (; k <= '9'; k++)
 			{
 				l = j + 1;
