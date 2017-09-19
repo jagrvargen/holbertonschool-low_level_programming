@@ -1,7 +1,13 @@
-#include <stdio.h>
 #include"holberton.h"
 
-int main(void)
+/**
+ * holberton - prints Holberton
+ * followed by a new line.
+ * void - takes no arguments
+ *
+ * Return: void
+ */
+int holberton(void)
 {
 	_putchar('H');
 	_putchar('o');
