@@ -20,7 +20,7 @@ int main(void)
 	k = 2;
 	printf("%ld, ", j);
 	printf("%ld, ", k);
-	for (i = 0; i < 46; i++)
+	for (i = 0; i < 47; i++)
 	{
 		fib = j + k;
 		printf("%ld, ", fib);
