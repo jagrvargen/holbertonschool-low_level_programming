@@ -1,4 +1,4 @@
-#include"holberton.h"
+#include "holberton.h"
 
 /**
  * holberton - prints Holberton
@@ -7,7 +7,7 @@
  *
  * Return: void
  */
-int holberton(void)
+int main(void)
 {
 	_putchar('H');
 	_putchar('o');
