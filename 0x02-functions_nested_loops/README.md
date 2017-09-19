@@ -25,3 +25,5 @@
 12. times_table - Prints the n times table starting with 0 between 0 and 15.
 
 13. natural - prints the sum of all the multiples of 3 and 5 under 1024.
+
+14. fibonacci - prints the first 50 fibonaci numbers.
