@@ -21,3 +21,7 @@
 10. add - Adds two integers and returns the result.
 
 11. print_to_98 - Prints all natural numbers from n to 98, followed by a newline.
+
+12. times_table - Prints the n times table starting with 0 between 0 and 15.
+
+13. natural - prints the sum of all the multiples of 3 and 5 under 1024.
