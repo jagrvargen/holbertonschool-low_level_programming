@@ -9,3 +9,5 @@
 4. isalpha - Checks if a character is alphabetic.
 
 5. print_sign - returns 1 and prints + if number is positive. returns 0 and prints 0 if n is 0. returns -1 and prints - if n is negative.
+
+6. _abs - returns the absolute value of an integer.
