@@ -95,22 +95,17 @@ void print_num(int i, int divisor)
 	}
 	else
 	{
-		i *= -1;
 		_putchar('-');
-		if (i > 9)
+		if (i >= -9)
 		{
-			_putchar(i / 10 + '0');
-			_putchar(i % 10 + '0');
+			_putchar(i % 10 * -1 + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
 		else
 		{
-			for (; divisor > 1; divisor /= 10)
-			{
-				_putchar((i / divisor) + '0');
-			}
-			_putchar(i % 10 + '0');
+			_putchar(i / 10 * -1 + '0');
+			_putchar(i % 10 * -1 + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
