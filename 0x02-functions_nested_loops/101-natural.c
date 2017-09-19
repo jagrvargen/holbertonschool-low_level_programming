@@ -1,6 +1,13 @@
 #include "holberton.h"
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * void - takes no argument
+ *
+ * Return: always 0 (success)
+ */
 int main(void)
 {
 	int i;
