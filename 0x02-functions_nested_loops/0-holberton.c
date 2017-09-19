@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * holberton - prints Holberton
+ * main - prints Holberton
  * followed by a new line.
  * void - takes no arguments
  *
