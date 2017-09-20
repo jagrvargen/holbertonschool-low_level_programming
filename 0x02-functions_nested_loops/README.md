@@ -27,3 +27,5 @@
 13. natural - prints the sum of all the multiples of 3 and 5 under 1024.
 
 14. fibonacci - prints the first 50 fibonaci numbers.
+
+15. fibonacci - prints sum of all even fibonacci numbers under 4,000,000.
