@@ -15,3 +15,5 @@
 7. print_diagonal.c - draws a diagonal line on the terminal.
 
 8. print_square.c - Prints a square, followed by a new line.
+
+9. fizz_buzz.c - Prints numbers 1 - 100, except where multiples of 3 print Fizz, multiples of 5 print Buzz, and multiples of both print FizzBuzz.
