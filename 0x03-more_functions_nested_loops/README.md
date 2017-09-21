@@ -5,3 +5,5 @@
 2. mul.c - Multiplies two integers.
 
 3. print_numbers.c - Prints the numbers 0 - 9 followed by a new line.
+
+4. print_most_numbers - Print the numbers 0 - 9, with the exception of 2 and 4, followed by a new line.
