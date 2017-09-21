@@ -17,3 +17,5 @@
 8. print_square.c - Prints a square, followed by a new line.
 
 9. fizz_buzz.c - Prints numbers 1 - 100, except where multiples of 3 print Fizz, multiples of 5 print Buzz, and multiples of both print FizzBuzz.
+
+10. print_triangle - Prints a triangle followed by a new line.
