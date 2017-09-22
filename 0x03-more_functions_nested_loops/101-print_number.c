@@ -1,10 +1,17 @@
 #include "holberton.h"
 
+/**
+ * print_number - prints an integer using _putchar
+ *
+ * @n: takes an integer as an argument
+ *
+ * Return: void
+ */
 void print_number(int n)
 {
 	if (n < 0)
 	{
-		n =- n;
+		n *= -1;
 		_putchar('-');
 		print_number(n / 10);
 	}
