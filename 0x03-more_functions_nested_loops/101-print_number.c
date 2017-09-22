@@ -10,16 +10,21 @@
  */
 void print_number(int n)
 {
-	int x;
+	unsigned int x;
 	int counter;
 	int divisor;
+	unsigned int num;
 
 	if (n < 0)
 	{
-		n *= -1;
+		num = n * -1;
 		_putchar('-');
 	}
-	x = n;
+	else
+	{
+		num = n;
+	}
+	x = num;
 	counter = 0;
 	while (x > 0)
 	{
@@ -34,7 +39,7 @@ void print_number(int n)
 	}
 	while (divisor > 0)
 	{
-		_putchar(n / divisor % 10 + '0');
+		_putchar(num / divisor % 10 + '0');
 		divisor /= 10;
 	}
 }
