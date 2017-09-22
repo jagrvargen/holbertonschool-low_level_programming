@@ -19,3 +19,7 @@
 9. fizz_buzz.c - Prints numbers 1 - 100, except where multiples of 3 print Fizz, multiples of 5 print Buzz, and multiples of both print FizzBuzz.
 
 10. print_triangle - Prints a triangle followed by a new line.
+
+11. Finds and prints the largest prime factor of 612852475143.
+
+12. print_number.c - Prints an integer using _putchar.
