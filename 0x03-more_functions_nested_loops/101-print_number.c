@@ -1,6 +1,13 @@
 #include "holberton.h"
 #include <stdio.h>
 
+/**
+ * print_number - prints an integer using _putchar
+ *
+ * @n: takes a single integer as an argument
+ *
+ * Return: void
+ */
 void print_number(int n)
 {
 	int x;
