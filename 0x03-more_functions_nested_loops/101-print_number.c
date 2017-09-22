@@ -19,9 +19,6 @@ void print_number(int n)
 		n *= -1;
 		_putchar('-');
 	}
-	else if (n == 0)
-		_putchar('0');
-
 	x = n;
 	counter = 0;
 	while (x > 0)
