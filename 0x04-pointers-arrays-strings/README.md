@@ -5,3 +5,5 @@
 2. _strlen - Returns the length of a string.
 
 3. _puts - Prints a string followed by a new line to stdout.
+
+4. print_rev - Prints a string in reverse followed by a new line.
