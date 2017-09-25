@@ -3,3 +3,5 @@
 1. swap - Swaps the value of two integers.
 
 2. _strlen - Returns the length of a string.
+
+3. _puts - Prints a string followed by a new line to stdout.
