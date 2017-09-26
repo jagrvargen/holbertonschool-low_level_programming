@@ -13,3 +13,7 @@
 6. puts2 - Prints every other character in a string, starting with the first.
 
 7. puts_half - Prints the second half of a string.
+
+8. print_array - prints n elements of an array of integers.
+
+9. char *_strcpy(char *dest, char *src);
