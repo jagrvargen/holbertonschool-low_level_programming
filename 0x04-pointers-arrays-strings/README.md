@@ -9,3 +9,5 @@
 4. print_rev - Prints a string in reverse followed by a new line.
 
 5. rev_string - Reverses a string.
+
+6. puts2 - Prints every other character in a string, starting with the first.
