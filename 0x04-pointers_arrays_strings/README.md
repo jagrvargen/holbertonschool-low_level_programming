@@ -11,3 +11,5 @@
 5. rev_string - Reverses a string.
 
 6. puts2 - Prints every other character in a string, starting with the first.
+
+7. puts_half - Prints the second half of a string.
