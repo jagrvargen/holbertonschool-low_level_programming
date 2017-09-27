@@ -31,5 +31,5 @@ int _atoi(char *s)
 		i++;
 	}
 	total *= sign;
-	return (total;
+	return (total);
 }
