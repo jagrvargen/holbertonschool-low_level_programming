@@ -10,21 +10,23 @@ int _atoi(char *s)
 {
 	unsigned int total;
 	int sign;
+	int i;
 
+	i = 0;
 	sign = 1;
 	total = 0;
-	while(!(*s >= '0' && *s <= '9' && *s != '\0'))
+	while (!(*(s + i) >= '0' && *(s + i) <= '9' && *(s + i) != '\0'))
 	{
-		if (*s == '-')
+		if (*(s + i) == '-')
 			sign *= -1;
-		s++;
+		i++;
 	}
-	if (*s == '\0')
+	if (*(s + i) == '\0')
 		return (total);
-	while (*s >= '0' && *s <= '9' && *s != '\0')
+	while (*(s + i) >= '0' && *(s + i) <= '9' && *(s + i) != '\0')
 	{
-		total = total * 10 + (*s - '0');
-		s++;
+		total = total * 10 + (*(s + i) - '0');
+		i++;
 	}
 	return (total * sign);
 }
