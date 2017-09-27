@@ -11,7 +11,9 @@ int _atoi(char *s)
 	unsigned int total;
 	int sign;
 	int i;
+	int mult;
 
+	mult = 10;
 	i = 0;
 	sign = 1;
 	total = 0;
@@ -25,8 +27,9 @@ int _atoi(char *s)
 		return (total);
 	while (*(s + i) >= '0' && *(s + i) <= '9' && *(s + i) != '\0')
 	{
-		total = total * 10 + (*(s + i) - '0');
+		total = total * mult + (*(s + i) - '0');
 		i++;
 	}
-	return (total * sign);
+	total *= sign;
+	return (total;
 }
