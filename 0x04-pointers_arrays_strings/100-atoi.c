@@ -1,6 +1,6 @@
 #include "holberton.h"
 
-unsigned int place_count(char *p);
+int place_count(char *p);
 
 /**
  * _atoi - Converts a string to an integer.
@@ -44,7 +44,7 @@ int _atoi(char *s)
  * @p: Pointer to a saved place in s.
  * Return: integer
  */
-unsigned int place_count(char *p)
+int place_count(char *p)
 {
 	int place;
 	unsigned int multiplier;
