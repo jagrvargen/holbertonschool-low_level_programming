@@ -19,7 +19,7 @@ int _atoi(char *s)
 
 	negatives = 0;
 	sign = 1;
-	if (s == NULL)
+	if (*s == NULL)
 		return (0);
 	while (!(*s >= '0' && *s <= '9')) /* Iterate string until reach nums */
 	{
@@ -29,9 +29,9 @@ int _atoi(char *s)
 		}
 		s++;
 	}
-	if (*s == '\0')
+	if (!(*s >= '0' && *s <= '9'))
 		return (0);
-	if (negatives % 2 == 1)
+      	if (negatives % 2 == 1)
 		sign = -1; /* Determines if num is negative */
 	multiplier = place_count(s);
 	total = 0;
