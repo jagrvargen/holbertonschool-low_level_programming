@@ -21,7 +21,7 @@ int _atoi(char *s)
 	}
 	if (*s == '\0')
 		return (total);
-	while (*s >= '0' && *s <= '9')
+	while (*s >= '0' && *s <= '9' && *s != '\0')
 	{
 		total = total * 10 + (*s - '0');
 		s++;
