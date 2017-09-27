@@ -13,7 +13,7 @@ int place_count(char *p);
 int _atoi(char *s)
 {
 	unsigned int sign;
-	int multiplier;
+	unsigned int multiplier;
 	int negatives;
 	unsigned int total;
 
