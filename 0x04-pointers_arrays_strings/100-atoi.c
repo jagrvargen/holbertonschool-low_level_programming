@@ -19,8 +19,6 @@ int _atoi(char *s)
 
 	negatives = 0;
 	sign = 1;
-	if (*s == NULL)
-		return (0);
 	while (!(*s >= '0' && *s <= '9')) /* Iterate string until reach nums */
 	{
 		if (*s == '-')
