@@ -17,3 +17,5 @@
 8. print_array - prints n elements of an array of integers.
 
 9. char *_strcpy(char *dest, char *src);
+
+10. int _atoi(char *s);
