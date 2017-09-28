@@ -5,3 +5,5 @@
 2. strncpy - Copies a string up to n bytes from source string.
 
 3. strcmp - Compares two strings.
+
+4. rev_array - Reverses the content of an array of integers.
