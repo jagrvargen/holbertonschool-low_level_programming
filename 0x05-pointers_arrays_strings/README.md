@@ -9,3 +9,5 @@
 4. rev_array - Reverses the content of an array of integers.
 
 5. string_toupper - Changes all lowercase letters of a string to uppercase.
+
+6. cap_string - Capitalizes all words in a string separated by , ; . ! ? \" ( ) { and };
