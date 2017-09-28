@@ -3,3 +3,5 @@
 1. strncat - Concatenates two strings up to n bytes from source string. If src more than n bytes, does not necessarily need to be null terminated.
 
 2. strncpy - Copies a string up to n bytes from source string.
+
+3. strcmp - Compares two strings.
