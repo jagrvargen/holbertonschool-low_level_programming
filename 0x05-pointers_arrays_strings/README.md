@@ -15,3 +15,7 @@
 7. leet - Encodes a string into 1337 speak.
 
 8. rot13 - Encodes a string using rot13.
+
+9. print_number - Prints an integer using _putchar without arrays or pointers.
+
+10. magic - Moves the value of an int ahead in memory to an array using a pointer.
