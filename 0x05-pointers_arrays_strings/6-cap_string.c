@@ -15,10 +15,12 @@ char *cap_string(char *s)
 	int len;
 	char punc[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\t', ' ', '\n'};
 
-	for (len = 0; punc[len] != ' ';)
+	for (len = 0; punc[len] != '\n';)
 		len++;
 	for (i = 0; s[i] != '\0'; i++)
 	{
+		if (_islower(s[0]))
+			s[0] -= 'a' - 'A';
 		for (j = 0; j <= len; j++)
 		{
 			if (s[i] == punc[j] && _islower(s[i + 1]))
