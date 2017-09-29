@@ -11,20 +11,31 @@ int _islower(char c);
 char *cap_string(char *s)
 {
 	int i;
-	int j;
-	int len;
-	char punc[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\t', ' ', '\n'};
 
-	for (len = 0; punc[len] != '\n';)
-		len++;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (_islower(s[0]))
 			s[0] -= 'a' - 'A';
-		for (j = 0; j <= len; j++)
+		switch (s[i])
 		{
-			if (s[i] == punc[j] && _islower(s[i + 1]))
+		case ',':
+		case ';':
+		case '.':
+		case '!':
+		case '?':
+		case '"':
+		case '(':
+		case ')':
+		case '{':
+		case '}':
+		case '\t':
+		case ' ':
+		case '\n':
+			if (_islower(s[i + 1]))
 				s[i + 1] -= 'a' - 'A';
+			break;
+		default:
+			break;
 		}
 	}
 	s[i] = '\0';
