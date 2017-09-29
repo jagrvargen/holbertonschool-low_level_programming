@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 
 int _islower(char c);
 /**
@@ -14,7 +13,7 @@ char *cap_string(char *s)
 	int i;
 	int j;
 	int len;
-	char punc[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\t', ' '};
+	char punc[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\t', ' ', '\n'};
 
 	for (len = 0; punc[len] != ' ';)
 		len++;
@@ -26,6 +25,7 @@ char *cap_string(char *s)
 				s[i + 1] -= 'a' - 'A';
 		}
 	}
+	s[i] = '\0';
 	return (s);
 }
 
