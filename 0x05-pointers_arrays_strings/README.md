@@ -13,3 +13,5 @@
 6. cap_string - Capitalizes all words in a string separated by , ; . ! ? \" ( ) { and };
 
 7. leet - Encodes a string into 1337 speak.
+
+8. rot13 - Encodes a string using rot13.
