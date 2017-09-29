@@ -11,3 +11,5 @@
 5. string_toupper - Changes all lowercase letters of a string to uppercase.
 
 6. cap_string - Capitalizes all words in a string separated by , ; . ! ? \" ( ) { and };
+
+7. leet - Encodes a string into 1337 speak.
