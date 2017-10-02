@@ -51,6 +51,7 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 
 char *_strchr(char *s, char c);
 
-#define NULL ((char *)0);
+unsigned int _strspn(char *s, char *accept);
 
 #endif
+#define NULL ((char *) 0)
