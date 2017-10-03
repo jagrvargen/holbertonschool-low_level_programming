@@ -18,6 +18,7 @@ void print_diagsums(int *a, int size)
 
 	rows = &*a;
 	columns = 0;
+	sum = 0;
 	for (i = 0; i < size * size; i += size)
 	{
 		sum += *(rows + columns);
