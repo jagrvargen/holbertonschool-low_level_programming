@@ -24,7 +24,10 @@ char *_strstr(char *haystack, char *needle)
 			if (*pn == '\0')
 				return (haystack);
 			else if (*ph != *pn)
+			{
 				pn = &*needle;
+				haystack++;
+			}
 		}
 	}
 	return (NULL);
