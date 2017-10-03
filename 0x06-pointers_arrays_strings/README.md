@@ -13,3 +13,5 @@
 6. print_chessboard - Prints a chessboard.
 
 7. print_diagsums - Prints the sum of the two diagonals of a square matrix.
+
+8. set_string - Sets the value of a pointer to a char.
