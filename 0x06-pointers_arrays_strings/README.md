@@ -9,3 +9,5 @@
 4. strpbrk - Searches a string for first occurence of given set of bytes.
 
 5. strstr - Locates a substring within a string and returns a pointer to its location.
+
+6. print_chessboard - Prints a chessboard.
