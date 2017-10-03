@@ -13,9 +13,9 @@ char *_strstr(char *haystack, char *needle)
 	char *ph;
 	char *pn;
 
-	for (; *haystack != '\0'; haystack++)
+	ph = &*haystack;
+	for (; *ph != '\0'; ph++)
 	{
-		ph = &*haystack;
 		pn = &*needle;
 		while (*ph == *pn)
 		{
@@ -26,7 +26,6 @@ char *_strstr(char *haystack, char *needle)
 			else if (*ph != *pn)
 			{
 				pn = &*needle;
-				haystack++;
 			}
 		}
 	}
