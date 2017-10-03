@@ -10,21 +10,21 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i;
-	char *p;
+	char *ph;
+	char *pn;
 
-	i = 0;
 	for (; *haystack != '\0'; haystack++)
 	{
-		p = &*haystack;
-		while (needle[i] == *p)
+		ph = &*haystack;
+		pn = &*needle;
+		while (*ph == *pn)
 		{
-			i++;
-			p++;
-			if (needle[i] == '\0')
+			ph++;
+			pn++;
+			if (*pn == '\0')
 				return (haystack);
-			else if (needle[i] != *p)
-				i = 0;
+			else if (*ph != *pn)
+				pn = &*needle;
 		}
 	}
 	return (NULL);
