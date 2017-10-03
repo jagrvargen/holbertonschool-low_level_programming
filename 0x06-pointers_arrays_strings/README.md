@@ -11,3 +11,5 @@
 5. strstr - Locates a substring within a string and returns a pointer to its location.
 
 6. print_chessboard - Prints a chessboard.
+
+7. print_diagsums - Prints the sum of the two diagonals of a square matrix.
