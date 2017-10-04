@@ -3,3 +3,5 @@
 1. print_rev_recursion - Prints a string in reverse using recursion.
 
 2. strlen_recursion - Returns the length of a string using recursion.
+
+3. factorial - Returns the factorial of a given number.
