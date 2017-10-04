@@ -15,6 +15,14 @@ int _sqrt_recursion(int n)
 	return (test_root(0, n));
 }
 
+/**
+ * test_root - checks if int r is natural square root of int n
+ *
+ * @r: An integer value
+ * @n: An integer value
+ *
+ * Return: An integer
+ */
 int test_root(int r, int n)
 {
 	if (r * r == n)
