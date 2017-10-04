@@ -6,4 +6,6 @@
 
 3. factorial - Returns the factorial of a given number.
 
-4. pow_recursion - Returns the value of x raised to the power of y.
+4. pow_recursion - Returns the value of x raised to the power of y using recursion.
+
+5. sqrt_recursion - Returns the natural square root of a number using recursion.
