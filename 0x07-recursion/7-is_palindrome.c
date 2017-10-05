@@ -21,6 +21,7 @@ int is_palindrome(char *s)
  *
  * @s: A pointer to a string.
  * @len: An integer value.
+ * @i: An integer value
  *
  * Return: An integer value of 1 or 0.
  */
