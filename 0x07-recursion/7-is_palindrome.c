@@ -11,9 +11,19 @@ int _strlen_recursion(char *s);
  */
 int is_palindrome(char *s)
 {
+	if (*s == '\0')
+		return (0);
 	return (wrapper(s, _strlen_recursion(s)));
 }
 
+/**
+ * wrapper - Determines if string is palindrome
+ *
+ * @s: A pointer to a string.
+ * @len: An integer value.
+ *
+ * Return: An integer value of 1 or 0.
+ */
 int wrapper(char *s, int len)
 {
 	if (s[len - 1] != *s)
