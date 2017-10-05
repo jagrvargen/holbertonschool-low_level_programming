@@ -11,3 +11,5 @@
 5. sqrt_recursion - Returns the natural square root of a number using recursion.
 
 6. is_prime_number - Returns 1 if the input is a prime number, otherwise returns 0.
+
+7. is_palindrome - Returns 1 if a string is a palindrome, 0 otherwise.
