@@ -3,3 +3,5 @@
 1. args - Prints the number of arguments passed to it.
 
 2. args2 - Prints all the arguments it receives.
+
+3. mul - Prints the result of numbers provided to the program as command line arguments, followed by a new line.
