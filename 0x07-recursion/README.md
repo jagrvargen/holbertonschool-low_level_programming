@@ -9,3 +9,5 @@
 4. pow_recursion - Returns the value of x raised to the power of y using recursion.
 
 5. sqrt_recursion - Returns the natural square root of a number using recursion.
+
+6. is_prime_number - Returns 1 if the input is a prime number, otherwise returns 0.
