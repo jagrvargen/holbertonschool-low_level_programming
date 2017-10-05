@@ -28,7 +28,7 @@ int wrapper(char *s, int len)
 {
 	if (s[len - 1] != *s)
 		return (0);
-	else if (len - len == 0)
+	else if (len - len == 0 || len - len == 1)
 		return (1);
 	return (wrapper(s, len));
 }
