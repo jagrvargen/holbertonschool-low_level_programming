@@ -1,5 +1,5 @@
 #include "holberton.h"
-int wrapper(char *s, int len);
+int wrapper(char *s, int len, int i);
 int _strlen_recursion(char *s);
 
 /**
@@ -13,7 +13,7 @@ int is_palindrome(char *s)
 {
 	if (*s == '\0')
 		return (0);
-	return (wrapper(s, _strlen_recursion(s)));
+	return (wrapper(s, _strlen_recursion(s), 0));
 }
 
 /**
@@ -24,13 +24,13 @@ int is_palindrome(char *s)
  *
  * Return: An integer value of 1 or 0.
  */
-int wrapper(char *s, int len)
+int wrapper(char *s, int len, int i)
 {
-	if (s[len - 1] != *s)
+	if (s[len - 1] != s[i])
 		return (0);
-	else if (len - len == 0 || len - len == 1)
+	else if (len - 1 == i || len == i)
 		return (1);
-	return (wrapper(s + 1, len - 1));
+	return (wrapper(s, len - 1, i + 1));
 }
 
 /**
