@@ -13,6 +13,14 @@ int is_prime_number(int n)
 	return (feed_num(n, 2));
 }
 
+/**
+ * feed_num - Checks number for primality
+ *
+ * @n: An integer value
+ * @x: An integer value
+ *
+ * Return: An integer value
+ */
 int feed_num(int n, int x)
 {
 	if (n <= 0 || n < 2)
