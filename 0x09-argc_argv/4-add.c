@@ -19,7 +19,10 @@ int main(int argc, char *argv[])
 	i = 1;
 	sum = 0;
 	if (argc == 1)
+	{
 		printf("%d\n", 0);
+		return (0);
+	}
 	while (argv[i] != NULL)
 	{
 		if (isdigit(*argv[i]))
