@@ -1,6 +1,6 @@
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
  * main - Adds positive numbers. If a non-integer is entered, prints 'Error'
@@ -14,25 +14,25 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	long sum;
+	int sum;
 
+	i = 1;
 	sum = 0;
-	i = 0;
-	if (argc == 0)
+	if (argc == 1)
 		printf("%d\n", 0);
-	else
+	while (argv[i] != NULL)
 	{
-		for (i = 1; i < argc; i++)
+		if (isdigit(*argv[i]))
 		{
-			if (!(isdigit(strtol(argv[i], argv, 10))))
-			{
-				printf("Error\n");
-				return (1);
-			}
-			else
-				sum += strtol(argv[i], argv, 10);
+			sum += atoi(argv[i]);
+			i++;
 		}
-		printf("%ld\n", sum);
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
+	printf("%d\n", sum);
 	return (0);
 }
