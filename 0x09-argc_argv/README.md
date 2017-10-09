@@ -7,3 +7,5 @@
 3. mul - Prints the result of numbers provided to the program as command line arguments, followed by a new line.
 
 4. add - Adds positive numbers. If no number is presented, prints Error and returns 1.
+
+5. change - Prints the minimum number of coins to make change for an amount of money.
