@@ -18,9 +18,15 @@ char *str_concat(char *s1, char *s2)
 	int i;
 	char *ps;
 
+	if (s1 == NULL)
+		len1 = 0;
+	else if (s1 != NULL)
+		len1 = _strlen(s1);
+	if (s2 == NULL)
+		len2 = 0;
+	else if (s2 != NULL)
+		len2 = _strlen(s2) + len1;
 	i = 0;
-	len1 = _strlen(s1);
-	len2 = _strlen(s2) + len1;
 	ps = malloc((len1 + len2 + 2) * sizeof(*ps));
 	while (i < len1)
 	{
