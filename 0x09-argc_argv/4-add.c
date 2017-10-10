@@ -1,40 +1,35 @@
-#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
-/**
- * main - Adds positive numbers. If a non-integer is entered, prints 'Error'
- * and returns 1.
- *
- * @argc: An integer value.
- * @argv: A pointer to an array of strings
- *
- * Return: 0 if success, 1 if failure.
- */
 int main(int argc, char *argv[])
 {
 	int i;
+	int j;
 	int sum;
 
 	i = 1;
+	j = 0;
 	sum = 0;
-	if (argc == 1)
+	if (argc == 0)
 	{
-		printf("%d\n", 0);
+		printf("0");
 		return (0);
 	}
 	while (argv[i] != NULL)
 	{
-		if (isdigit(*argv[i]))
+		while (argv[i][j] != '\0')
 		{
-			sum += atoi(argv[i]);
-			i++;
+			if (!(isdigit(argv[i][j])))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			j++;
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		sum += atoi(argv[i]);
+		i++;
+		j = 0;
 	}
 	printf("%d\n", sum);
 	return (0);
