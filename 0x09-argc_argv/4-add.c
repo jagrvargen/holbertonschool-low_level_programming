@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+/**
+ * main - Adds positive numbers.
+ *
+ * @argc: An integer value
+ * @argv: A pointer to an array of pointers
+ *
+ * Return: 0 if success, 1 if failure.
+ */
 int main(int argc, char *argv[])
 {
 	int i;
