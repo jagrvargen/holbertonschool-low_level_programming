@@ -1,8 +1,8 @@
 #include "holberton.h"
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdio.h>
 int _strlen(char *s);
-int _putchar(char c);
 
 /**
  * argstostr - Concatenates all the arguments of a program
@@ -16,25 +16,34 @@ char *argstostr(int ac, char **av)
 {
 	int i;
 	int j;
+	int k;
 	int len;
 	char *avp;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
+	len = 0;
+	for (i = 1; av[i] != NULL; i++)
+		len += _strlen(av[i] + 1);
+	len++;
+	avp = malloc(len * sizeof(char));
+	if (avp == NULL)
+		return (NULL);
 	j = 1;
+	k = 0;
 	while (ac > 1 && av[j] != NULL)
 	{
-		len = _strlen(av[j]);
-		avp = malloc(len * sizeof(char));
-		if (avp == NULL)
-			return (NULL);
 		for (i = 0; av[j][i] != '\0'; i++)
-			_putchar(av[j][i]);
-		_putchar('\n');
+		{
+			avp[k] = av[j][i];
+			k++;
+		}
+		avp[k] = '\n';
+		k++;
 		j++;
 		ac--;
 	}
-	_putchar('\0');
+	avp[++k] = '\0';
 	return (avp);
 }
 
@@ -52,16 +61,4 @@ int _strlen(char *s)
 	for (i = 0; *(s + i) != '\0';)
 		i++;
 	return (i);
-}
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
 }
