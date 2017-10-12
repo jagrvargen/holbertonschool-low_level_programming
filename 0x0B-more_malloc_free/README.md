@@ -5,3 +5,5 @@
 2. _calloc - Allocates memory for an array of size nmemb, using malloc, and returns a pointer to the allocated memory. Sets memory to 0.
 
 3. array_range - Creates an array of integers.
+
+4. _realloc -  Reallocates a memory block from original size to new size  using malloc and free.
