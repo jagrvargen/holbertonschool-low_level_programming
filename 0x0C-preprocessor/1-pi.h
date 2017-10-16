@@ -1,5 +1,5 @@
 #ifndef pi
-#define def
+#define pi
 #define PI 3.14159265359
 
 #endif
