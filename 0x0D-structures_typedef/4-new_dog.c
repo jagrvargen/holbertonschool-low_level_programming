@@ -20,24 +20,22 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (name == NULL)
 		return (NULL);
-	pntr = malloc(sizeof(struct dog));
+	pntr = malloc(sizeof(dog_t));
 	if (pntr == NULL)
 		return (NULL);
-	npntr = malloc(sizeof(char) * _strlen(name));
+	npntr = _strdup(name);
 	if (npntr == NULL)
 	{
 		free(pntr);
 		return (NULL);
 	}
-	npntr = _strdup(name);
-	opntr = malloc(sizeof(char) * _strlen(owner));
+	opntr = _strdup(owner);
 	if (opntr == NULL)
 	{
 		free(npntr);
 		free(pntr);
 		return (NULL);
 	}
-	opntr = _strdup(owner);
 	pntr->name = npntr;
 	pntr->age = age;
 	pntr->owner = opntr;
