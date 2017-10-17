@@ -7,3 +7,5 @@
 3. dog_t - A new name for the stype struct dog.
 
 4. new_dog.c - Function that creates a new dog.
+
+5. free_dog - Function that frees memory allocated for struct dogs.
