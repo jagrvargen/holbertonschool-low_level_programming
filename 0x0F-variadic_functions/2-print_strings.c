@@ -15,8 +15,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	char *point;
 
-	if (n == 0)
-		return;
 	va_start(valist, n);
 	for (i = 0; i < n; i++)
 	{
