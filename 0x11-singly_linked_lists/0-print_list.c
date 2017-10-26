@@ -1,5 +1,5 @@
 #include "lists.h"
-int _putchar(char c);
+
 int _puts(char *s);
 /**
  * print_list - Prints all the elements of a list_t list.
@@ -33,23 +33,11 @@ size_t print_list(const list_t *h)
 }
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-        return (write(1, &c, 1));
-}
-
-/**
  * _puts - A function that prints a string.
  *
  * @s: A pointer to a string.
  *
- * Return: An integer value;
+ * Return: An integer value.
  */
 int _puts(char *s)
 {
