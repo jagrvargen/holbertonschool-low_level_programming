@@ -10,10 +10,10 @@ int _puts(char *s);
  */
 size_t print_list(const list_t *h)
 {
-	unsigned int count;
+	size_t count;
 
 	if (h == NULL)
-		return (1);
+		return (0);
 	count = 0;
 	while (h != NULL)
 	{
