@@ -18,7 +18,10 @@ size_t print_list(const list_t *h)
 	while (h != NULL)
 	{
 		_putchar('[');
-		_putchar((h->len) + '0');
+		if (h->str == NULL)
+			_putchar('0');
+		else
+			_putchar((h->len) + '0');
 		_putchar(']');
 		_putchar(' ');
 		if (h->str == NULL)
