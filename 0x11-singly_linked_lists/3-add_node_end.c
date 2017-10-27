@@ -50,10 +50,10 @@ list_t *add_node_end(list_t **head, const char *str)
  */
 int _strlen(char *s)
 {
-        unsigned int i;
+	unsigned int i;
 
-        for (i = 0; s[i] != '\0';)
-                i++;
+	for (i = 0; s[i] != '\0';)
+		i++;
 
-        return (i);
+	return (i);
 }
