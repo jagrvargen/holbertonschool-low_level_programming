@@ -19,8 +19,9 @@ size_t print_list(const list_t *h)
 	{
 		_putchar('[');
 		if (h->str == NULL)
-			h->len = 0;
-		_putchar((h->len) + '0');
+			_putchar('0');
+		else
+			_putchar((h->len) + '0');
 		_putchar(']');
 		_putchar(' ');
 		if (h->str == NULL)
