@@ -11,6 +11,8 @@ void free_list(list_t *head)
 {
 	list_t *pointer;
 
+	if (head == NULL)
+		return;
 	while (head != NULL)
 	{
 		pointer = head->next;
