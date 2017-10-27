@@ -11,15 +11,13 @@ void free_list(list_t *head)
 {
 	list_t *pointer;
 
-	if (head == NULL)
-		return;
-	pointer = head;
 	while (head != NULL)
 	{
 		pointer = head->next;
 		free(head->str);
-		free(head->next);
 		free(head);
 		head = pointer;
 	}
+	if (head == NULL)
+		free(head);
 }
