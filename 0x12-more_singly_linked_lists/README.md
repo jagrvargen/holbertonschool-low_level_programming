@@ -6,3 +6,5 @@
 2. listint_t.c - Adds a new node to the beginning of a listint_t list.
 
 3. add_nodeint_end.c - Adds a new node to the end of a listint_t list.
+
+4. free_listint.c - Frees a listint_t list.
