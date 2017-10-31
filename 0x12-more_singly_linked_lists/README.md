@@ -16,3 +16,5 @@
 7. get_nodeint.c - Returns the nth node of a listint_t linked list.
 
 8. sum_listint.c - Returns the sum of all the data (n) of a listint_t linked list.
+
+9. insert_nodeint.c - Inserts a new node at a given position.
