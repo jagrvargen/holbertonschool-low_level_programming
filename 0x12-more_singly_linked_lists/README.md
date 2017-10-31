@@ -12,3 +12,5 @@
 5. free_listint2.c - Frees a listint_t list and sets the head node to null.
 
 6. pop_listint.c - Deletes the head node of a listint_t linked list, and returns the head node's data(n).
+
+7. get_nodeint.c - Returns the nth node of a listint_t linked list.
