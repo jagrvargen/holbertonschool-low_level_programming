@@ -29,12 +29,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = new_node;
 		return (new_node);
 	}
-	while (pointer != NULL && tracker < idx)
+	while (pointer != NULL && tracker < idx - 1)
 	{
 		pointer = pointer->next;
 		tracker++;
 	}
-	if (tracker == idx)
+	if (tracker == idx - 1)
 	{
 		new_node->next = pointer->next;
 		pointer->next = new_node;
