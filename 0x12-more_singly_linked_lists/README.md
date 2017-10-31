@@ -18,3 +18,5 @@
 8. sum_listint.c - Returns the sum of all the data (n) of a listint_t linked list.
 
 9. insert_nodeint.c - Inserts a new node at a given position.
+
+10. delete_nodeint.c - Deletes the node at given index of a listint_t linked list.
