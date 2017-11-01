@@ -20,3 +20,5 @@
 9. insert_nodeint.c - Inserts a new node at a given position.
 
 10. delete_nodeint.c - Deletes the node at given index of a listint_t linked list.
+
+11. reverse_listint.c - Reverses a listint_t list.
