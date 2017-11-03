@@ -15,6 +15,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int mask;
 	unsigned long int xor;
 
+	if (n > 32 || m > 32)
+		return (-1);
 	total = 0;
 	mask = 1;
 	xor = (n ^ m);
