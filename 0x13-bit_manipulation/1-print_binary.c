@@ -17,7 +17,7 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-	while (mask << 1 != 0 )
+	while (mask << 1 != 0)
 		mask <<= 1;
 	while (mask > 0)
 	{
