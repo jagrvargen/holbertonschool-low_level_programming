@@ -11,24 +11,11 @@
 int create_file(const char *filename, char *text_content)
 {
 	int result, fd, len;
-	char *buf;
 
 	if (filename == NULL)
 		return (-1);
-	if (text_content == NULL)
-	{
-		fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-		if (fd == -1)
-			return (fd);
-		result = write(fd, "", 0);
-		if (result == -1)
-			return (result);
-	}
 	for (len = 0; text_content[len] != '\0';)
 		len++;
-	buf = malloc(sizeof(char) * len);
-	if (buf == NULL)
-		return (-1);
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	if (fd == -1)
 		return (fd);
