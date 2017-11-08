@@ -57,7 +57,7 @@ void error_handle(int err_no, ...)
 	va_start(ap, err_no);
 	if (err_no == 97)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_tp\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	else if (err_no == 98)
