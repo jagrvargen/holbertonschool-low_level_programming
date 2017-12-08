@@ -10,3 +10,5 @@
 4. 4-free_dlistint.c - Frees a dlistint_t list from memory.
 
 5. 5-get_dnodeint.c - Returns the nth node of a dlistint_t linked list.
+
+6. 6-sum_dlistint.c - Returns the sum of all the data (n) of a dlistint_t linked list.
