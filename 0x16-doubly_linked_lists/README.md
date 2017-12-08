@@ -14,3 +14,5 @@
 6. 6-sum_dlistint.c - Returns the sum of all the data (n) of a dlistint_t linked list.
 
 7. 7-insert_dnodeint.c - Inserts a new node into a doubly linked list at a given position.
+
+8. 8-delete_dnodeint.c - Deletes the node at index 'index' of a dlistint_t linked list.
