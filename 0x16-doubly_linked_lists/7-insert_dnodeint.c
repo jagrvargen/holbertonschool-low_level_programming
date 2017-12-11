@@ -28,7 +28,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		new_node->next = *h;
 		*h = new_node;
 	}
-	search = (*h)->next;
+	search = *h;
 	while (search != NULL && idx > 0)
 	{
 		new_node->prev = search;
