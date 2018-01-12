@@ -17,6 +17,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
 
+	if (ht->size == NULL || ht->array == NULL)
+		return (0);
+
 	if (key == '\0') /* Check for empty key */
 		return (0);
 
