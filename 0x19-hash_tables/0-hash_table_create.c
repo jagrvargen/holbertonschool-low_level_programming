@@ -1,5 +1,12 @@
 #include "hash_tables.h"
 
+/**
+ * hash_table_create - A function that creates a chaining  hash table
+ *
+ * @size: The size of the array in the table.
+ *
+ * Return: A pointer to a new hash table or NULL if failed.
+ */
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *my_table;
