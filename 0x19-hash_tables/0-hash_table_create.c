@@ -16,7 +16,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (my_table == NULL)
 		return (NULL);
 
-	my_table->array = malloc(sizeof(void*) * size);
+	my_table->array = malloc(sizeof(void *) * size);
 	if (my_table->array == NULL)
 	{
 		free(my_table);
