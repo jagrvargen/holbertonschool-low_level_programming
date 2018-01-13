@@ -14,10 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index;
 	hash_node_t *new_node;
 
-	if (ht == NULL || key == NULL || value == NULL)
-		return (0);
-
-	if (ht->size == NULL || ht->array == NULL)
+	if (ht == NULL || key == NULL || value == NULL || ht->array == NULL)
 		return (0);
 
 	if (key == '\0') /* Check for empty key */
@@ -28,16 +25,20 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	new_node->key = strdup(key); /* Set values of new node */
-	new_node->value = strdup(value);
-	if (new_node->key == NULL || new_node->value == NULL)
+	if (new_node->key == NULL)
 	{
 		free(new_node);
 		return (0);
 	}
-	new_node->next = NULL;
+	new_node->value = strdup(value);
+	if (new_node->value == NULL)
+	{
+		free(new_node);
+		return (0);
+	}
 
-	index = hash_djb2((const unsigned char*)key) % ht->size;
-        /* Retrieve array index */
+	new_node->next = NULL;
+	index = hash_djb2((const unsigned char *)key) % ht->size;
 
 	if (ht->array[index]  == NULL) /* Put new node in first slot */
 		ht->array[index] = new_node;
