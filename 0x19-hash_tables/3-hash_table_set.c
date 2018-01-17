@@ -34,11 +34,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	new_node->next = NULL;
 	index = hash_djb2((const unsigned char *)key) % ht->size;
-	if (ht->array[index]  == NULL) /* Put new node in first slot */
+	if (ht->array[index] == NULL) /* Put new node in first slot */
 		ht->array[index] = new_node;
 	else
 	{
-		if (check_list(ht->array[index], new_node->key) == 0)
+		if (check_list(ht->array[index], new_node->key) == 1)
 		{
 			free(new_node->key);
 			free(new_node->value);
@@ -68,6 +68,7 @@ int check_list(hash_node_t *head, const char *key)
 	{
 		if (!strcmp(search->key, key))
 			return (1);
+		search = search->next;
 	}
 	return (0);
 }
