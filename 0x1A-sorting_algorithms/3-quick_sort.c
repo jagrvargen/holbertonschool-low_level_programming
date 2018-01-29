@@ -6,6 +6,7 @@
  * @array: An array of integers.
  * @low: An unsigned integer value.
  * @high: An unsigned integer value.
+ * @size: An unsigned integer value.
  *
  * Return: an integer that is the partition of the calling quicksort
  */
@@ -47,6 +48,7 @@ size_t partition(int *array, int low, int high, size_t size)
  * @array: An array of integers
  * @low: the lowest index number being sorted
  * @high: the highest index number being sorted
+ * @size: An unsigned integer value.
  *
  * Return: void
  */
