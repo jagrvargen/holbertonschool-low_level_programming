@@ -9,7 +9,7 @@
  *
  * Return: an integer that is the partition of the calling quicksort
  */
-size_t partition(int *array, int low, int high)
+size_t partition(int *array, int low, int high, size_t size)
 {
 	int pivot;
 	int i, j;
@@ -26,15 +26,18 @@ size_t partition(int *array, int low, int high)
 			array[i] = array[j];
 			array[j] = temp;
 			if (array[i] != array[j])
-				print_array(array, 10);
+				print_array(array, size);
 			i += 1;
 		}
 	}
-	temp = array[i];
-	array[i] = array[high];
-	array[high] = temp;
-	if (array[i] != array[high])
-		print_array(array, 10);
+	if (array[high] < array[i])
+	{
+		temp = array[i];
+		array[i] = array[high];
+		array[high] = temp;
+		if (array[i] != array[high])
+			print_array(array, size);
+	}
 	return (i);
 }
 
@@ -47,15 +50,15 @@ size_t partition(int *array, int low, int high)
  *
  * Return: void
  */
-void q_sort(int *array, int low, int high)
+void q_sort(int *array, int low, int high, size_t size)
 {
 	int p;
 
 	if (low < high)
 	{
-		p = partition(array, low, high);
-		q_sort(array, low, p - 1);
-		q_sort(array, p + 1, high);
+		p = partition(array, low, high, size);
+		q_sort(array, low, p - 1, size);
+		q_sort(array, p + 1, high, size);
 	}
 }
 
@@ -78,5 +81,5 @@ void quick_sort(int *array, size_t size)
 
 	low = 0;
 	high = size - 1;
-	q_sort(array, low, high);
+	q_sort(array, low, high, size);
 }
