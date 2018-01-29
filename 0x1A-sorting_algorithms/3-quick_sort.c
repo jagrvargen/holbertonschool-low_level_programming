@@ -1,6 +1,24 @@
 #include "sort.h"
 
 /**
+ * swap_n_print - Swaps to numbers in an integer array.
+ *
+ * @x: An integer value
+ * @y: An integer value.
+ * @array: An array of integers.
+ * @size: An unsigned integer value.
+ *
+ * Return: void
+ */
+void swap_n_print(int *x, int *y, int *array, size_t size)
+{
+	int temp = *x;
+	*x = *y;
+	*y = temp;
+	print_array(array, size);
+}
+
+/**
  * partition - A partitioning algorithm.
  *
  * @array: An array of integers.
@@ -14,32 +32,21 @@ size_t partition(int *array, int low, int high, size_t size)
 {
 	int pivot;
 	int i, j;
-	int temp;
 
 	pivot = array[high];
-	i = low;
+	i = low - 1;
 
 	for (j = low; j < high; j++)
 	{
-		if (array[j] <= pivot)
+		if (array[j] < pivot && array[i + 1] > array[j])
 		{
-			temp = array[i];
-			array[i] = array[j];
-			array[j] = temp;
-			if (array[i] != array[j])
-				print_array(array, size);
 			i += 1;
+			swap_n_print(&array[i], &array[j], array, size);
 		}
 	}
-	if (array[high] < array[i])
-	{
-		temp = array[i];
-		array[i] = array[high];
-		array[high] = temp;
-		if (array[i] != array[high])
-			print_array(array, size);
-	}
-	return (i);
+	if (array[high] < array[i + 1])
+		swap_n_print(&array[high], &array[i + 1], array, size);
+	return (i + 1);
 }
 
 /**
