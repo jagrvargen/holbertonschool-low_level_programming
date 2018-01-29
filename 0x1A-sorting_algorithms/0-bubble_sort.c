@@ -1,7 +1,12 @@
 #include "sort.h"
 
 /**
- * bubble_sort - sorts an array of integers
+ * bubble_sort - sorts an array of integers.
+ *
+ * @array: An array of integers.
+ * @size: An unsigned integer value.
+ *
+ * Return: void
  */
 void bubble_sort(int *array, size_t size)
 {
