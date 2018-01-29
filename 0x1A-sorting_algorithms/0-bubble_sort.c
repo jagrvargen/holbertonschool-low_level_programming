@@ -10,11 +10,13 @@
  */
 void bubble_sort(int *array, size_t size)
 {
-	unsigned int swap_mode;
+	unsigned int swap_mode = 1;
 	int temp;
 	size_t i;
 
-	while (1)
+	if (array == NULL)
+		return;
+	while (swap_mode != 0)
 	{
 		swap_mode = 0;
 		for (i = 0; i < size - 1; i++)
@@ -28,7 +30,5 @@ void bubble_sort(int *array, size_t size)
 				print_array(array, size);
 			}
 		}
-		if (swap_mode == 0)
-			break;
 	}
 }
