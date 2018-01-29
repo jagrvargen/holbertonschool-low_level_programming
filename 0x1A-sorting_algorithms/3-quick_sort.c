@@ -15,7 +15,8 @@ void swap_n_print(int *x, int *y, int *array, size_t size)
 	int temp = *x;
 	*x = *y;
 	*y = temp;
-	print_array(array, size);
+	if (*x != *y)
+		print_array(array, size);
 }
 
 /**
@@ -34,19 +35,21 @@ size_t partition(int *array, int low, int high, size_t size)
 	int i, j;
 
 	pivot = array[high];
-	i = low - 1;
+	i = low;
 
 	for (j = low; j < high; j++)
 	{
-		if (array[j] < pivot && array[i + 1] > array[j])
+		if (array[j] <= pivot && i != j)
 		{
-			i += 1;
 			swap_n_print(&array[i], &array[j], array, size);
+			i++;
 		}
+		else if (array[j] <= pivot && i == j)
+			i++;
 	}
-	if (array[high] < array[i + 1])
-		swap_n_print(&array[high], &array[i + 1], array, size);
-	return (i + 1);
+	if (array[high] < array[i])
+		swap_n_print(&array[high], &array[i], array, size);
+	return (i);
 }
 
 /**
