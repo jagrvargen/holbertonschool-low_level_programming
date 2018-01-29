@@ -22,23 +22,19 @@ size_t partition(int *array, int low, int high)
 	{
 		if (array[j] <= pivot)
 		{
+			temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
 			if (array[i] != array[j])
-			{
-				temp = array[i];
-				array[i] = array[j];
-				array[j] = temp;
 				print_array(array, 10);
-			}
 			i += 1;
 		}
 	}
+	temp = array[i];
+	array[i] = array[high];
+	array[high] = temp;
 	if (array[i] != array[high])
-	{
-		temp = array[i];
-		array[i] = array[high];
-		array[high] = temp;
 		print_array(array, 10);
-	}
 	return (i);
 }
 
