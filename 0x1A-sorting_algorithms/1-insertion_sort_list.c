@@ -3,47 +3,47 @@
 /**
  * insertion_sort_list - An implementation of the insertion sort algorithm.
  *
- * @listint_t: A double pointer to a doubly linked list.
+ * @list: A double pointer to a doubly linked list.
  *
  * Return: void
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *eosl; /* end of sorted line */
-	listint_t *current;
+	listint_t *e; /* end of sorted line */
+	listint_t *c;
 
 	if (list == NULL || *list == NULL)
 		return;
 
-	eosl = *list;
-	current = eosl->next;
+	e = *list;
+	c = e->next;
 
-	while (current)
+	while (c)
 	{
-		if (current->n < eosl->n)
+		if (c->n < e->n)
 		{
-			while (current->prev && current->n < current->prev->n)
+			while (c->prev && c->n < c->prev->n)
 			{
-				current->prev->next = current->next;
-				if (current->next != NULL)
-					current->next->prev = current->prev;
-				current->prev = current->prev->prev;
-				if (current->next != NULL)
-					current->next = current->next->prev;
-				else if (current->next == NULL && current->prev == NULL)
-					current->next = *list;
+				c->prev->next = c->next;
+				if (c->next != NULL)
+					c->next->prev = c->prev;
+				c->prev = c->prev->prev;
+				if (c->next != NULL)
+					c->next = c->next->prev;
+				else if (c->next == NULL && c->prev == NULL)
+					c->next = *list;
 				else
-					current->next = current->prev->next;
-				if (current->prev != NULL)
-					current->prev->next = current;
-				current->next->prev = current;
-				if (current->prev == NULL)
-					*list = current;
+					c->next = c->prev->next;
+				if (c->prev != NULL)
+					c->prev->next = c;
+				c->next->prev = c;
+				if (c->prev == NULL)
+					*list = c;
 				print_list(*list);
 			}
 		}
 		else
-			eosl = current;
-		current = eosl->next;
+			e = c;
+		c = e->next;
 	}
 }
