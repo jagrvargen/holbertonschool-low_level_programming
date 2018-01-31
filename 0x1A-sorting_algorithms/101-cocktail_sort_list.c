@@ -54,6 +54,7 @@ void cocktail_sort_list(listint_t **list)
 /**
  * reverse_swap - Swaps the list in reverse order.
  *
+ * @node: A pointer to a node in a doubly linked list.
  * @list: A pointer to a doubly linked list.
  *
  * Return: void
