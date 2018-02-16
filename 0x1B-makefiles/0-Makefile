@@ -1,3 +1,5 @@
+# -*- MakeFile -*-
+
 all: holberton
 
 holberton: main.c holberton.c m.h
