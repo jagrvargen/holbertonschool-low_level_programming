@@ -5,5 +5,5 @@ SRC = main.c holberton.c
 OBJ := $(SRC:.c=.o)
 NAME = holberton
 
-all: $(SRC) $(OBJ)
+all: $(OBJ) m.h
 	$(CC) $(OBJ) -o $(NAME)
