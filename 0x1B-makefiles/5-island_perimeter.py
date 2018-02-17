@@ -5,6 +5,7 @@
    consists of 1s surround by water consisting of 0s.
 """
 
+
 def island_perimeter(grid):
     """This function determines the perimeter of an island on a 2D grid."""
     perim = 0
