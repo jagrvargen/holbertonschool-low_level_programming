@@ -20,7 +20,7 @@ fclean:
 	rm -f $(OBJ)
 
 re:
-	$(RM)
+	rm -f $(OBJ)
 	$(CC) -c -o main.o main.c
 	$(CC) -c -o holberton.o holberton.c
 	$(CC) $(OBJ) -o $(NAME)
