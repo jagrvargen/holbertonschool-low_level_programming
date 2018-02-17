@@ -1,33 +1,21 @@
 # -*- MakeFile -*-
 
 CC = gcc
-SRC := main.c holberton.c
-OBJ := $(SRC:%.c=%.o)
+SRC = main.c holberton.c
+OBJ = $(SRC:.c=.o)
 NAME = holberton
-RM = rm -f *~ holberton
+RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: $(SRC) $(OBJ) m.h
-	$(CC) $(OBJ) -o $(NAME)
-
-main.o: main.c m.h
-	$(CC) $(CFLAGS) -c -o main.o main.c
-
-holberton.o: holberton.c m.h
-	$(CC) $(CFLAGS) -c -o holberton.o holberton.c
+all: $(OBJ) m.h
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM)
+	$(RM) *~ $(NAME)
 
 oclean:
-	rm -f $(OBJ)
+	$(RM) $(OBJ)
 
-fclean:
-	$(RM)
-	rm -f $(OBJ)
+fclean: clean oclean
 
-re:
-	$(RM)
-	$(CC) -c -o main.o main.c
-	$(CC) -c -o holberton.o holberton.c
-	$(CC) $(OBJ) -o $(NAME)
+re: oclean all
