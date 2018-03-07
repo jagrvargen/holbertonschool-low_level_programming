@@ -7,3 +7,5 @@
 2. 2-binary_tree_insert_right.c - Inserts a node as the right child of another node.
 
 3. 3-binary_tree_deleye.c - Deletes an entire binary tree.
+
+4. 4-binary_tree_is_leaf.c - Checks if a node is a leaf.
