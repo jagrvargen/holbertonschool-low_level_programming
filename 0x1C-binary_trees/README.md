@@ -13,3 +13,5 @@
 5. 5-binary_tree_is_root.c - Checks if a given node is root.
 
 6. 6-binary_tree_preorder.c - Goes through a binary tree using preorder traversal.
+
+7. 7-binary_tree_inorder.c - Goes through a binary tree using in-order traversal.
