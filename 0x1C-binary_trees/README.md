@@ -9,3 +9,5 @@
 3. 3-binary_tree_deleye.c - Deletes an entire binary tree.
 
 4. 4-binary_tree_is_leaf.c - Checks if a node is a leaf.
+
+5. 5-binary_tree_is_root.c - Checks if a given node is root.
