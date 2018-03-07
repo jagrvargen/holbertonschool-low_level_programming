@@ -5,3 +5,5 @@
 1. 1-binary_tree_insert_left.c - Inserts a node as the left child of another node.
 
 2. 2-binary_tree_insert_right.c - Inserts a node as the right child of another node.
+
+3. 3-binary_tree_deleye.c - Deletes an entire binary tree.
