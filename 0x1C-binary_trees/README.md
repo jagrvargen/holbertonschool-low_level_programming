@@ -19,3 +19,5 @@
 8. 8-binary_tree_postorder.c - Goes through a binary tree using postorder traversal.
 
 9. 9-binary_tree_height.c - Measures the height of a binary tree.
+
+10. 10-binary_tree_depth.c - Measures the depth of a binary tree from a given node.
