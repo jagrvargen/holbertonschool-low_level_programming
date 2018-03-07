@@ -15,3 +15,5 @@
 6. 6-binary_tree_preorder.c - Goes through a binary tree using preorder traversal.
 
 7. 7-binary_tree_inorder.c - Goes through a binary tree using in-order traversal.
+
+8. 8-binary_tree_postorder.c - Goes through a binary tree using postorder traversal.
