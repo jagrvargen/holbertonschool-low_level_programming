@@ -23,3 +23,5 @@
 10. 10-binary_tree_depth.c - Measures the depth of a binary tree from a given node.
 
 11. 11-binary_tree_size.c - Measures the size of a binary tree.
+
+12. 12-binary_tree_leaves.c - A function that counts the leaves in a binary tree.
