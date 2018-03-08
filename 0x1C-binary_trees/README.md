@@ -21,3 +21,5 @@
 9. 9-binary_tree_height.c - Measures the height of a binary tree.
 
 10. 10-binary_tree_depth.c - Measures the depth of a binary tree from a given node.
+
+11. 11-binary_tree_size.c - Measures the size of a binary tree.
