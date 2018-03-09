@@ -27,3 +27,5 @@
 12. 12-binary_tree_leaves.c - A function that counts the leaves in a binary tree.
 
 13. 13-binary_tree_nodes.c - Counts all the nodes with at least 1 child in a binary tree.
+
+14. 14-binary_tree_balance.c - Measures the balance factor of a binary tree.
