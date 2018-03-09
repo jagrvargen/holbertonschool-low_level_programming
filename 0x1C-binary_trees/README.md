@@ -33,3 +33,5 @@
 15. 15-binary_tree_is_full.c - Checks if a binary tree is full.
 
 16. 16-binary_tree_is_perfect.c - Checks if a binary tree is perfect.
+
+17. 17-binary_tree_sibling.c - Finds the sibling of a node.
